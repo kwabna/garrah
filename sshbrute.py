@@ -28,6 +28,14 @@ def connect(host, user, password, release):
 		if release: connection_lock.release()
 
 def main():
+	print """
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	################    SSH Bruteforce  Python Script    #################
+	#####################   Author: OSINTKwadjo   ########################
+	##################  Email: ###########@gmail.com   ###################
+	#####  Appreciations to TJ. O’Connor  Python Violent Cookbook   ######
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	"""
 	parser = optparse.OptionParser("usage%prog "+ "-host <target host> -user <user> -password <password list>")
 	parser.add_option('-host', dest='host', type='string', help='specify host')
 	parser.add_option('-user', dest='user', type='string', help='specify the username')
