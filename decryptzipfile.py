@@ -11,6 +11,15 @@ def extractFile(zFile, password):
 		print "[!] Unable to find the password from the password list file"
 
 def main():
+	print """
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+	####################    Zip File Bruteforce    #######################
+	#####################   Author: OSINTKwadjo   ########################
+	##################  Email: ###########@gmail.com   ###################
+
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	"""
 	parser = optparse.OptionParser("usage%prog "+ "-f <zipfile> -d <dictionary>")
 	parser.add_option('-f', dest='zname', type='string', help='specify zip file')
 	parser.add_option('-d', dest='dname', type='string', help='specify the dictionary file')
